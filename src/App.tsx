@@ -1,4 +1,5 @@
-import Cat from "./components/button";
+import button from "./components/button";
+import alert from "./components/alert";
 
 function App() {
   const aConsole = () => console.log("It Clicked!!");
@@ -9,7 +10,7 @@ function App() {
   let caName = "btn-close";
 
   return (
-    <Cat
+    <button
       alertName={alName}
       alertMessage={alMessage}
       cName={caName}
@@ -17,7 +18,7 @@ function App() {
       onClick={aConsole}
     >
       {firstName}
-    </Cat>
+    </button>
   );
 }
 
