@@ -3,7 +3,7 @@ import Cat from "./components/button";
 function App() {
   const aConsole = () => console.log("It Clicked!!");
   let btnColor = "warning";
-  let firstName = "John";
+  let firstName = "Skippy";
   let alName = "alert alert-warning alert-dismissible fade show";
   let alMessage = "You should check in on some of those fields below.";
   let caName = "btn-close";
