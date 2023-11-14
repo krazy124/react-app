@@ -6,7 +6,11 @@ interface Props {
 
 const alert = ({ children }: Props) => {
     return (
-        <div className='alert alert-primary'></div>
+     <div className={alertName} role="alert">
+     {alertMessage}
+     <button type="button" className={cName}
+      data-bs-dismiss="alert" aria-label="Close"></button>
+     </div>
     )
 }
 

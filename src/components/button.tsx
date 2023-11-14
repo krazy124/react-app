@@ -19,15 +19,7 @@ const button = ({
 }: Props) => {
   return (
     <div>
-      <div className={alertName} role="alert">
-        {alertMessage}
-        <button
-          type="button"
-          className={cName}
-          data-bs-dismiss="alert"
-          aria-label="Close"
-        ></button>
-      </div>
+
       <button className={"btn btn-" + color} onClick={onClick}>
         {children}
       </button>
