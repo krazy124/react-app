@@ -4,9 +4,7 @@ interface Props {
   children: string;
   color: string;
   onClick: () => void;
-  alertName: string;
-  alertMessage: string;
-  cName: string;
+
 }
 
 const button = ({

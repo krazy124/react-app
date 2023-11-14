@@ -1,10 +1,12 @@
 import { ReactNode } from 'react';
 
 interface Props {
-    children: ReactNode;
+  alertName: string;
+  alertMessage: string;
+  cName: string;
 }
 
-const alert = ({ children }: Props) => {
+const alert = ({alerName,alertMessage,cName}: Props) => {
     return (
      <div className={alertName} role="alert">
      {alertMessage}
