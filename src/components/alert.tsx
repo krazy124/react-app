@@ -6,7 +6,7 @@ interface Props {
   cName: string;
 }
 
-const alert = ({alerName,alertMessage,cName}: Props) => {
+const alert = ({alertName,alertMessage,cName}: Props) => {
     return (
      <div className={alertName} role="alert">
      {alertMessage}
