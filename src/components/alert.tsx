@@ -16,4 +16,4 @@ const alert = ({alertName,alertMessage,cName}: Props) => {
     )
 }
 
-export default Alert
+export default alert

@@ -10,15 +10,10 @@ function App() {
   let caName = "btn-close";
 
   return (
-    <button
-      alertName={alName}
-      alertMessage={alMessage}
-      cName={caName}
-      color={btnColor}
-      onClick={aConsole}
-    >
-      {firstName}
-    </button>
+  <div>
+  <alert alertName={alName} alertMessage={alMessage} cName={caName}/>
+ <button color={btnColor} onClick={aConsole}> {firstName}</button>
+ </div>
   );
 }
 
