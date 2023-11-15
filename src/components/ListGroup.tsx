@@ -33,3 +33,9 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
 }
 
 export default ListGroup;
+
+
+
+
+ <button color={btnColor} onClick={aConsole}> {firstName}</button>
+

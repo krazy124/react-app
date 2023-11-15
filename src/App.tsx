@@ -1,5 +1,6 @@
-import button from "./components/button";
-import alert from "./components/alert";
+import Button from "./components/Button";
+import Alert from "./components/Alert";
+import Test from "./components/Test";
 
 function App() {
   const aConsole = () => console.log("It Clicked!!");
@@ -10,11 +11,15 @@ function App() {
   let caName = "btn-close";
 
   return (
-  <div>
-  <alert alertName={alName} alertMessage={alMessage} cName={caName}/>
- <button color={btnColor} onClick={aConsole}> {firstName}</button>
- </div>
-  );
+    <div>
+    <Alert/>
+    <Button 
+    color={btnColor} 
+    onClick={aConsole}>
+    {firstName}
+    </Button>
+    </div>
+)
 }
 
 export default App;
