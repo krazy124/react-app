@@ -1,4 +1,6 @@
-import Cat from "./components/button";
+import Button from "./components/Button";
+import Alert from "./components/Alert";
+import Test from "./components/Test";
 
 function App() {
   const aConsole = () => console.log("It Clicked!!");
@@ -9,16 +11,15 @@ function App() {
   let caName = "btn-close";
 
   return (
-    <Cat
-      alertName={alName}
-      alertMessage={alMessage}
-      cName={caName}
-      color={btnColor}
-      onClick={aConsole}
-    >
-      {firstName}
-    </Cat>
-  );
+    <div>
+    <Alert/>
+    <Button 
+    color={btnColor} 
+    onClick={aConsole}>
+    {firstName}
+    </Button>
+    </div>
+)
 }
 
 export default App;

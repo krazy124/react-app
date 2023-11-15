@@ -4,38 +4,15 @@ interface Props {
   children: string;
   color: string;
   onClick: () => void;
-  alertName: string;
-  alertMessage: string;
-  cName: string;
 }
 
-const Cat = ({
-  children,
-  onClick,
-  color,
-  alertName,
-  alertMessage,
-  cName,
-}: Props) => {
+const Button = ({children,onClick,color}: Props) => {
   return (
-    <div>
-      <div className={alertName} role="alert">
-        {alertMessage}
-        <button
-          type="button"
-          className={cName}
-          data-bs-dismiss="alert"
-          aria-label="Close"
-        ></button>
-      </div>
-      <button className={"btn btn-" + color} onClick={onClick}>
-        {children}
-      </button>
-    </div>
-  );
-};
+     <button className={"btn btn-" + color} onClick={onClick}>{children}</button>
+  )
+}
 
-export default Cat;
+export default Button;
 
 /*<div class="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
